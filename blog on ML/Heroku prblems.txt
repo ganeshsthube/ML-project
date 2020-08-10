@@ -1,0 +1,31 @@
+1) Requirements.txt file is very important at the time of deployment of app
+
+How to create requirements.txt?
+  There is one CMD command pip freeze>requirement.txt
+
+ 
+2) For knowing the detail of app run following CMD command
+
+  heroku logs --app APP NAME(For detail)
+
+3) If our app deploy succesfull but even it shows following eroor then ....
+
+  a)This app is undergoing maintenance right now.
+
+    Please check back later.
+
+  Sol.->Run The following command
+
+       heroku maintenance --app APP NAME
+
+   If the result says on, type following command:
+
+       heroku maintenance:off --app APP NAME
+
+4)An error occurred in the application and your page could not be served. 
+If you are the application owner, check your logs for details. 
+You can do this from the Heroku CLI with the command
+
+  Sol.->run the following command
+
+      heroku logs --app APP NAME
